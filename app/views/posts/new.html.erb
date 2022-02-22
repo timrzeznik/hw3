@@ -1,16 +1,17 @@
 <%= form_with model: @post do |form| %>
+
     <p>
-        <%= form.label "title" %>
+        <%= form.label "Title:" %>
         <%= form.text_field "title" %>
     </p>
     
     <p>
-        <%= form.label "description" %>
+        <%= form.label "Description:" %>
         <%= form.text_field "description" %>
     </p>
 
     <p>
-        <%= form.label "posted_on" %>
+        <%= form.label "Posted on:" %>
         <%= form.date_field "posted_on" %>
         <%= form.hidden_field "place_id" %>
     </p>
