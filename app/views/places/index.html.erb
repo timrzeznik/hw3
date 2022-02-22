@@ -2,9 +2,7 @@
 
 <ul>
   <% for place in @places %>
-    <li>
-      <a href="/places/<%= place.id %>"><%= place.name %></a>
-    </li>
+    <li><a href="/places/<%= place.id %>"><%= place.name %></a></li>
   <% end %>
 </ul>
 
