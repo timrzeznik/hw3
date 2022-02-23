@@ -3,7 +3,7 @@
     <% for post in @place.posts %>
         <h2>Post Title: <%= "#{post.title}" %></h2>
         <p>Post Description: <%= "#{post.description}" %><p>
-        <p>Post Date: <%= "#{post.posted_on}" %></p>
+        <p>Posted On: <%= "#{post.posted_on}" %></p>
     <% end %>
 
 <p><a href="/posts/new?place_id=<%= @place.id %>">New Post</a></p>
